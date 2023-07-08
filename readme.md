@@ -1,4 +1,4 @@
-# Assignment 01 realated links
+# Assignment 01 related links
 
 Req doc: https://docs.google.com/document/d/1J24ts-Pr7_NohBCKxA3Qss43oRlvsoyIncUspaIqWNE/edit?usp=sharing <br>
 Site Map: https://www.gloomaps.com/Q7efDdCbyY<br>
