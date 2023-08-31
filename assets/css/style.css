@@ -111,3 +111,114 @@
     padding-right: 20px;
 }
 
+/*about page*/
+
+.about {
+    height: 100vh;
+    margin-left: 140px;
+    margin-right: 140px;
+    position: relative;
+    /* background: lightpink;*/
+
+}
+
+.about > section > div:nth-child(2) > nav > ol {
+    list-style: none;
+    display: block;
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    top: 15px;
+    right: 0;
+}
+
+.about > section > div:nth-child(2) > nav > ol > li {
+    display: inline;
+    padding-left: 12px;
+    padding-right: 14px;
+    font-size: 20px;
+    color: #000000;
+
+
+}
+
+.about > section:nth-child(2) {
+    position: absolute;
+    height: 100vh;
+    width: 330px;
+    /* background: #f6efff;*/
+    top: 0;
+
+}
+
+.about > section:nth-child(2) > img {
+    height: 360px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+}
+
+
+.about > section:nth-child(3) {
+    position: absolute;
+    height: 100vh;
+    width: calc(100% - 330px);
+    /* background: #cbe3b1;*/
+    top: 0;
+    right: 0;
+
+}
+
+.about > section:nth-child(3) > div:first-child > h2 {
+    color: #A663FD;
+    font-size: 40px;
+    padding-left: 100px;
+    margin-top: 90px;
+}
+
+.about > section:nth-child(3) > div:nth-child(2) > h5 {
+    color: #A663FD;
+    transform: rotate(90deg);
+    position: absolute;
+    padding-left: 50px;
+
+}
+
+.about > section:nth-child(3) > div:nth-child(3) > p {
+    padding-left: 100px;
+}
+
+.about > section:nth-child(3) > div:nth-child(4) > h4 {
+    padding-left: 100px;
+}
+
+.about > section:nth-child(3) > section {
+    position: absolute;
+    left: 100px;
+}
+
+.about > section:nth-child(3) > section > div:nth-child(2) > a > button {
+    background: #D9C0F9;
+    border: 1px solid #A663FD;
+    height: 30px;
+    width: 120px;
+
+}
+
+.about > section:nth-child(3) > section > div:nth-child(2) > a > button:hover {
+    cursor: pointer;
+    background: #f6efff;
+
+}
+
+.about > section:nth-child(3) > section > div:nth-child(2) {
+    position: absolute;
+    top: 40px;
+}
+
