@@ -11,14 +11,25 @@
 
     <!--Link style sheet-->
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/home_page.css">
 
     <!--Link normalize style sheet-->
     <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Inter:wght@300&display=swap" rel="stylesheet">
 
 
 </head>
 <body>
+<!--Adding a preloader for the website-->
+<div class="preloader">
+    <div id="preloader-over-layer"></div>
+    <img src="assets/img/loader.gif" alt="">
 
+</div>
 <!--Home page-->
 <section class="home_main">
     <section class="home">
@@ -32,13 +43,13 @@
                 <div>
                     <span>MF</span>
                     <h1>MAHEESHA FERNANDO</h1>
-                    <h4>I’m a Software Engineer from Sri Lanka</h4>
+                    <h4 id="typing_text">I’m a Software Engineer from Sri Lanka</h4>
                 </div>
                 <div>
                     <nav>
                         <ol>
                             <li>Home</li>
-                            <li>About</li>
+                            <li id="about">About</li>
                             <li>Qualifications</li>
                             <li>Tasks</li>
                             <li>Gallery</li>
@@ -70,30 +81,30 @@
 </section>
 
 <!--About page-->
+<section id="nav_bar">
+    <div>
 
+        <img src="assets/img/logo.png" title="logo" alt="logo png" height="50">
+    </div>
+    <div>
+        <nav>
+            <ol>
+                <li>Home</li>
+                <li>About</li>
+                <li>Qualifications</li>
+                <li>Tasks</li>
+                <li>Gallery</li>
+                <li>Contact</li>
+
+            </ol>
+        </nav>
+        <br>
+    </div>
+
+
+</section>
 <section class="about">
-    <section>
-        <div>
-
-            <img src="assets/img/logo.png" title="logo" alt="logo png" height="50">
-        </div>
-        <div>
-            <nav>
-                <ol>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Qualifications</li>
-                    <li>Tasks</li>
-                    <li>Gallery</li>
-                    <li>Contact</li>
-
-                </ol>
-            </nav>
-            <br>
-        </div>
-
-
-    </section>
+    <section></section>
 
     <section>
 
@@ -103,21 +114,25 @@
 
     <section>
         <div>
-            <h2>
-                SOFTWARE <br>
+            <h4>
+                SOFTWARE
                 ENGINEER
-            </h2>
+            </h4>
         </div>
         <div>
 
             <h5>ABOUT</h5>
-            <div></div>
+            <div id="about_line"></div>
         </div>
 
         <div>
-            <p>I’m a student of Institute of Software <br>
-                Engineering (IJSE) who studies about <br>
-                Software Engineering. </p>
+            <p>I’m a student of Institute of Software
+                Engineering (IJSE) who studies about
+                Software Engineering. In addition to the technical aspects, you'll also explore the collaborative and
+                project management aspects of Software Engineering. This includes learning how to work effectively in
+                teams,
+                manage project lifecycles, and adhere to industry best practices and standards, such as Agile or DevOps
+                methodologies.</p>
         </div>
 
         <div>
@@ -144,399 +159,524 @@
 
 </section>
 <!--Interest page-->
+<section class="interest_main">
+    <section class="interest">
 
-<section class="interest">
-    <section>
-        <h5>INTERESTS</h5>
-    </section>
+        <section class="ints_card_set">
 
-    <section>
-        <div>
-            <img src="assets/img/web_development.png" title="web development" alt="web_development.png">
-            <div>Web Development</div>
-        </div>
-
-        <div>
-            <img src="assets/img/mobile_application.png" title="mobile application" alt="mobile application.png">
-
-            <div>
-                Mobile Application
-            </div>
-        </div>
-
-        <div>
-            <img src="assets/img/graphic_design.png" title="graphic design" alt="graphic_design.png">
-
-            <div>
-                Graphic Designing
+            <div class="ints_card">
+                <span>Graphic Design</span>
+                <img src="assets/img/graphic_design.png" alt="">
             </div>
 
-        </div>
 
-        <div>
-            <img src="assets/img/ux_ui_engineering.png" title="ux ui engineering" alt="ux_ui_engineering.png">
-            <div>
-                UX/UI Engineering
+            <div class="ints_card">
+                <span>Software Development</span>
+                <img src="assets/img/software_development.png" alt="">
             </div>
-        </div>
-        <div>
-            <img src="assets/img/cyber_security.png" title="cyber security" alt="cyber_security.png">
-            <div> Cyber Security</div>
 
-        </div>
-        <div>
-            <img src="assets/img/software_development.png" title="software development"
-                 alt="software_development.png">
-            <div>Software Development</div>
-        </div>
 
+            <div class="ints_card">
+                <span>Cyber Security</span>
+                <img src="assets/img/cyber_security.png" alt="">
+            </div>
+
+
+            <div class="ints_card">
+                <span>Mobile Applications</span>
+                <img src="assets/img/mobile_application.png" alt="">
+            </div>
+
+
+            <div class="ints_card">
+                <span>UX/UI Engineering</span>
+                <img src="assets/img/ux_ui_engineering.png" alt="">
+            </div>
+
+            <div class="ints_card">
+                <span>Web Development</span>
+                <img src="assets/img/web_development.png" alt="">
+            </div>
+
+
+        </section>
+
+        <section>
+            <div>
+
+                <h5>INTERESTS</h5>
+                <div></div>
+            </div>
+
+
+        </section>
     </section>
 </section>
-
 
 <!--Academic Page-->
-<section>
-    <h5 id="academic">ACADEMIC</h5>
-</section>
+<section class="academic">
 
-<section>
-    <img src="assets/img/academic.png" title="professional" alt="professional.png" height="300">
-</section>
 
-<section>
-    <div>
-        <h3>Primary Education</h3>
-        <h4>2007 -2012</h4>
-        <p>Methodist College Panadura</p>
-    </div>
-    <div>
-        <h3>Ordinary Education </h3>
-        <h4>2013-2018</h4>
-        <p>Sri Sumangala Girls’ School Panadura</p>
-    </div>
-    <div>
-        <h3>Advanced Education </h3>
-        <h4>2019-2021</h4>
-        <p>Sirimavo Bandaranaike Vidyalaya - Colombo 07</p>
-    </div>
-    <div>
-        <h3>Higher Education </h3>
-        <h4>2022</h4>
-        <p>Institute of Software Engineering Panadura</p>
-    </div>
-</section>
+    <section class="academic01">
+        <img src="assets/img/academic.png" title="professional" alt="professional.png" height="300">
+    </section>
 
-<hr>
+    <section class="academic02">
+        <div></div>
+        <div data-aos="fade-right"></div>
+        <div data-aos="fade-left"></div>
+        <div data-aos="fade-right"></div>
+        <div data-aos="fade-left"></div>
+        <div>
+            <span id="academic">ACADEMIC</span>
+            <div id="academic_div"></div>
+        </div>
+        <section class="academic03">
+            <div div data-aos="fade-right">
+                <span class="text">Primary Education</span>
+                <br>
+                <span>2007 -2012</span>
+                <br>
+                <span>Methodist College Panadura</span>
+                <br>
+            </div>
+            <div div data-aos="fade-left">
+                <span class="text">Ordinary Education </span>
+                <br>
+                <span>2013-2018</span>
+                <br>
+                <span>Sri Sumangala Girls’ School Panadura</span>
+                <br>
+            </div>
+            <div div data-aos="fade-right">
+                <span class="text">Advanced Education </span>
+                <br>
+                <span>2019-2021</span>
+                <br>
+                <span>Sirimavo Bandaranaike Vidyalaya - Colombo 07</span>
+                <br>
+            </div>
+            <div div data-aos="fade-left">
+                <span class="text">Higher Education </span>
+                <br>
+                <span>2022</span>
+                <br>
+                <span>Institute of Software Engineering Panadura</span>
+                <br>
+            </div>
+        </section>
+    </section>
+
+
+</section>
 
 <!--Professional Qualification Page-->
-<section>
-    <h5>PROFESSIONAL</h5>
-</section>
+<section class="prof_main">
+    <section class="professional">
 
-<section>
-    <img src="assets/img/professional.png" title="professional" alt="professional.png" height="300">
-</section>
 
-<section>
-    <div>
-        <h3>AAT - 2</h3>
-        <h4>2018 -2019</h4>
-        <p>Completed up to second level.</p>
-    </div>
-    <div>
-        <h3>IBSL</h3>
-        <h4>2021-2022</h4>
-        <p>Followed the IABF level in the Institute of <br>
-            Bankers of Sri Lanka.</p>
-    </div>
-    <div>
-        <h3>IJSE</h3>
-        <h4>2022</h4>
-        <p>Following the GDSE programme in <br>
-            Institute of Software Enginering.</p>
-    </div>
-</section>
+        <section class="professional01">
+            <img src="assets/img/professional.png" title="professional" alt="professional.png" height="300">
+        </section>
 
-<hr>
+        <section class="professional02">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+
+            <span id="prof">
+        PROFESSIONAL
+
+    </span>
+            <div id="prof_div"></div>
+
+            <section class="professional03">
+                <div>
+                    <span class="txt">AAT - 2</span>
+                    <br>
+                    <span>2018 -2019</span>
+                    <br>
+                    <span>Completed up to second level.</span>
+                    <br>
+                </div>
+                <div>
+                    <span class="txt">IBSL</span>
+                    <br>
+                    <span>2021-2022</span>
+                    <br>
+                    <span>Followed the IABF level in the Institute of <br>
+            Bankers of Sri Lanka.</span>
+                    <br>
+                </div>
+                <div>
+                    <span class="txt">IJSE</span>
+                    <br>
+                    <span>2022</span>
+                    <br>
+                    <span>Following the GDSE programme in <br>
+            Institute of Software Enginering.</span>
+                    <br>
+                </div>
+            </section>
+        </section>
+    </section>
+</section>
 
 <!--Skills Page-->
-<section>
-    <h5>SKILLS</h5>
+<section class="skills">
+    <section>
+        <h5>SKILLS</h5>
+        <div></div>
+    </section>
+
+
+    <section class="icons">
+        <img src="../assets/img/intellij_idea.png" title="intellij idea" alt="intellij_idea.png" height="60">
+
+        <img src="../assets/img/apache_netBeans.png" title="apache netBeans" alt="apache_netBeans" height="60">
+        <img src="../assets/img/visual_studio.png" title="visual studio" alt="visual_studio.png" height="60">
+        <img src="../assets/img/html.png" title="html" alt="html.png" height="60">
+        <img src="../assets/img/css.png" title="css" alt="css.png" height="60">
+        <img src="../assets/img/java.png" title="java" alt="java.png" height="60">
+        <img src="../assets/img/mysql.png" title="mysql" alt="mysql.png" height="60">
+        <img src="../assets/img/javascript.png" title="javascript" alt="javascript.png" height="60">
+        <img src="../assets/img/figma.png" title="figma" alt="figma.png" height="60">
+        <img src="assets/img/sceneBuilder.png" title="sceneBuilder" alt="sceneBuilder.png" height="60">
+
+    </section>
+    <section class="summary">
+
+        <div>
+            <h1>10</h1><br>
+            <h2>Projects</h2>
+        </div>
+        <div>
+            <h1>200</h1><br>
+            <h2>Hrs of Support</h2>
+        </div>
+        <div>
+            <h1>10</h1><br>
+            <h2>Awards</h2>
+        </div>
+
+    </section>
+    <span id="skill_mf">MF</span>
 </section>
-
-<table>
-    <thead>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    </thead>
-
-    <tbody>
-    <tr>
-        <td><img src="../assets/img/intellij_idea.png" title="intellij idea" alt="intellij_idea.png" height="60"></td>
-
-        <td><img src="../assets/img/apache_netBeans.png" title="apache netBeans" alt="apache_netBeans" height="60"></td>
-        <td><img src="../assets/img/visual_studio.png" title="visual studio" alt="visual_studio.png" height="60"></td>
-        <td><img src="../assets/img/html.png" title="html" alt="html.png" height="60"></td>
-        <td><img src="../assets/img/css.png" title="css" alt="css.png" height="60"></td>
-    <tr>
-        <td><img src="../assets/img/java.png" title="java" alt="java.png" height="60"></td>
-        <td><img src="../assets/img/mysql.png" title="mysql" alt="mysql.png" height="60"></td>
-        <td><img src="../assets/img/javascript.png" title="javascript" alt="javascript.png" height="60"></td>
-        <td><img src="../assets/img/figma.png" title="figma" alt="figma.png" height="60"></td>
-        <td><img src="assets/img/sceneBuilder.png" title="sceneBuilder" alt="sceneBuilder.png" height="60"></td>
-
-    </tbody>
-</table>
-
-<section>
-    <table>
-        <thead>
-        <th></th>
-        <th></th>
-        <th></th>
-        </thead>
-
-        <tbody>
-        <tr>
-            <td><h2>10</h2></td>
-            <td><h2>200</h2></td>
-            <td><h2>10</h2></td>
-        </tr>
-
-        <tr>
-            <td>Projects</td>
-            <td>Hrs of Support</td>
-            <td>Awards</td>
-        </tr>
-        </tbody>
-    </table>
-</section>
-
-<br>
-<hr>
 
 <!--Project Page-->
-<section>
-    <h5 id="projects">PROJECTS</h5>
+<section class="project_main">
+    <section class="project">
+        <div class="record_wrap">
+
+            <section class="record">
+                <div class="record-arrow">
+                </div>
+                <div id="record1" class="record-display">
+
+                </div>
+                <div class="record-desc">
+                    <h1>Project RRI</h1>
+                    <p>
+                        Human Resource Management System for Rubber Research Institute of Sri Lanka.
+
+                    </p>
+                    <a href=""><img src="assets/img/github.png" alt="" width="30" height="30"></a>
+                </div>
+            </section>
+
+
+            <section class="record">
+                <div class="record-arrow">
+                </div>
+                <div id="record2" class="record-display">
+
+                </div>
+                <div class="record-desc">
+                    <h1>Connect Four</h1>
+                    <p>
+                        Connect Four game by using Artificial Intelligence.
+                    </p>
+                    <a href=""><img src="assets/img/github.png" alt="" width="30" height="30"></a>
+                </div>
+            </section>
+
+
+            <section class="record">
+                <div class="record-arrow">
+
+                </div>
+                <div id="record3" class="record-display">
+
+                </div>
+                <div class="record-desc">
+                    <h1>Project CIC</h1>
+                    <p>
+                        Banana Harvest Management System done for CIC Agro Farm Hingurakgoda.
+                    </p>
+                    <a href=""><img src="assets/img/github.png" alt="" width="30" height="30"></a>
+                </div>
+            </section>
+
+            <section class="record">
+                <div class="record-arrow">
+
+                </div>
+                <div id="record4" class="record-display">
+
+                </div>
+                <div class="record-desc">
+                    <h1>Project D24</h1>
+                    <p>
+                        Hostel Management System done for D24 Hostel to manage their students,rooms and reservations.
+                    </p>
+                    <a href=""><img src="assets/img/github.png" alt="" width="30" height="30"></a>
+                </div>
+            </section>
+
+            <section class="record">
+                <div class="record-arrow">
+
+                </div>
+                <div id="record5" class="record-display">
+
+                </div>
+                <div class="record-desc">
+                    <h1>Project Whisper</h1>
+                    <p>
+                        Chat application made up for group chat by using hibernate technology.
+                    </p>
+                    <a href=""><img src="assets/img/github.png" alt="" width="30" height="30"></a>
+                </div>
+            </section>
+
+            <section class="record">
+                <div class="record-arrow">
+
+                </div>
+                <div id="record6" class="record-display">
+
+                </div>
+                <div class="record-desc">
+                    <h1>Project MedHelp</h1>
+                    <p>
+                        Hospital Furniture Manufacturing Management System done for Thotawaththa Engineering.
+                    </p>
+                    <a href=""><img src="assets/img/github.png" alt="" width="30" height="30"></a>
+                </div>
+            </section>
+
+        </div>
+    </section>
 </section>
-
-<section>
-
-    <img src="../assets/img/rri_project.png" title="project" alt="rri_project" height="200">
-    <img src="../assets/img/rri_project.png" title="project" alt="rri_project" height="450">
-    <img src="../assets/img/rri_project.png" title="project" alt="rri_project" height="200">
-
-</section>
-
-<br>
-
-<section>
-    <button type="button">See More...</button>
-</section>
-<br>
-<hr>
 
 <!--Assignments Page-->
+<section class="assignment">
+    <h5 id="main_assign_tag">ASSIGNMENTS</h5>
+    <div id="main_assign_line"></div>
+    <div id="main_assign_line2"></div>
+
+
+    <section class="assignment-container">
+
+        <div class="assignment_card">
+            <h5>Assignment 01</h5>
+            <button type="button">View</button>
+        </div>
+
+
+        <div class="assignment_card">
+            <h5>Assignment 02</h5>
+            <button type="button">View</button>
+        </div>
+
+
+        <div class="assignment_card">
+            <h5>Assignment 03</h5>
+            <button type="button">View</button>
+        </div>
+
+
+        <div class="assignment_card">
+            <h5>Assignment 04</h5>
+            <button type="button">View</button>
+        </div>
+
+
+        <div class="assignment_card">
+            <h5>Assignment 05</h5>
+            <button type="button">View</button>
+        </div>
+
+
+        <div class="assignment_card">
+            <h5>Assignment 06</h5>
+            <button type="button">View</button>
+        </div>
+
+
+        <div class="assignment_card">
+            <h5>Assignment 07</h5>
+            <button type="button">View</button>
+        </div>
+
+
+        <div class="assignment_card">
+            <h5>Assignment 08</h5>
+            <button type="button">View</button>
+        </div>
+
+
+        <div class="assignment_card">
+            <h5>Assignment 09</h5>
+            <button type="button">View</button>
+        </div>
+
+
+        <div class="assignment_card">
+            <h5>Assignment 10</h5>
+            <button type="button">View</button>
+        </div>
+
+
+        <div class="assignment_card">
+            <h5>Assignment 11</h5>
+            <button type="button">View</button>
+        </div>
+
+
+        <div class="assignment_card">
+            <h5>Assignment 12</h5>
+            <button type="button">View</button>
+        </div>
+
+
+    </section>
 </section>
-<h5>ASSIGNMENTS</h5>
-</section>
 
-<section>
-    <table>
-        <thead>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        </thead>
-
-        <tbody>
-
-        <tr>
-            <td><img src="assets/img/assigment.png" title="assigment" alt="assigment.png" height="30">
-                <h3>Assignment 01</h3>
-                <button type="button">View</button>
-            </td>
-
-
-            <td><img src="assets/img/assigment.png" title="assigment" alt="assigment.png" height="30">
-                <h3>Assignment 02</h3>
-                <button type="button">View</button>
-            </td>
-            <td><img src="assets/img/assigment.png" title="assigment" alt="assigment.png" height="30">
-                <h3>Assignment 03</h3>
-                <button type="button">View</button>
-            </td>
-            <td><img src="assets/img/assigment.png" title="assigment" alt="assigment.png" height="30">
-                <h3>Assignment 04</h3>
-                <button type="button">View</button>
-            </td>
-        </tr>
-        <tr>
-            <td><img src="assets/img/assigment.png" title="assigment" alt="assigment.png" height="30">
-                <h3>Assignment 05</h3>
-                <button type="button">View</button>
-            </td>
-
-
-            <td><img src="assets/img/assigment.png" title="assigment" alt="assigment.png" height="30">
-                <h3>Assignment 06</h3>
-                <button type="button">View</button>
-            </td>
-            <td><img src="assets/img/assigment.png" title="assigment" alt="assigment.png" height="30">
-                <h3>Assignment 07</h3>
-                <button type="button">View</button>
-            </td>
-            <td><img src="assets/img/assigment.png" title="assigment" alt="assigment.png" height="30">
-                <h3>Assignment 08</h3>
-                <button type="button">View</button>
-            </td>
-        </tr>
-        <tr>
-            <td><img src="assets/img/assigment.png" title="assigment" alt="assigment.png" height="30">
-                <h3>Assignment 09</h3>
-                <button type="button">View</button>
-            </td>
-
-
-            <td><img src="assets/img/assigment.png" title="assigment" alt="assigment.png" height="30">
-                <h3>Assignment 10</h3>
-                <button type="button">View</button>
-            </td>
-            <td><img src="assets/img/assigment.png" title="assigment" alt="assigment.png" height="30">
-                <h3>Assignment 11</h3>
-                <button type="button">View</button>
-            </td>
-            <td><img src="assets/img/assigment.png" title="assigment" alt="assigment.png" height="30">
-                <h3>Assignment 12</h3>
-                <button type="button">View</button>
-            </td>
-        </tr>
-        </tbody>
-
-    </table>
-</section>
-
-<br>
-<hr>
 
 <!--Gallery-->
-</section>
-<h5 id="gallery">GALLERY</h5>
-</section>
+<section class="gallery_main">
+<section class="gallery_page">
+    <section>
+        <div>
+            <h2 id="gallery">GALLERY</h2>
+            <div></div>
+        </div>
 
-<section>
+    </section>
 
-    <table>
-        <thead>
-        <th></th>
-        <th></th>
-        <th></th>
-        </thead>
+    <section>
+        <img data-aos="zoom-in" src="assets/img/friends.png" title="Image" alt="image.png" height="250">
+        <img data-aos="zoom-in" src="assets/img/trip.png" title="Image" alt="image.png" height="250">
+        <img data-aos="zoom-in" src="assets/img/cic.png" title="Image" alt="image.png" height="250">
+        <img data-aos="zoom-in" src="assets/img/my.png" title="Image" alt="image.png" height="250">
+        <img data-aos="zoom-in" src="assets/img/my2.png" title="Image" alt="image.png" height="250">
+        <img data-aos="zoom-in" src="assets/img/day_out.png" title="Image" alt="image.png" height="250">
 
-        <tbody>
-        <tr>
-            <td><img src="assets/img/group_img.png" title="image" alt="image.png" height="250"></td>
-            <td colspan="2"><img src="assets/img/day_out.png" title="image" alt="image.png" height="250"></td>
-
-        </tr>
-
-        <tr>
-            <td><img src="assets/img/trip.png" title="image" alt="image.png" height="250"></td>
-            <td><img src="assets/img/inovesta.png" title="image" alt="image.png" height="250"></td>
-            <td><img src="assets/img/cic.png" title="image" alt="image.png" height="250"></td>
-        </tr>
-        <tr>
-            <td><img src="assets/img/awards.png" title="image" alt="image.png" height="250"></td>
-            <td colspan="2"><img src="assets/img/friends.png" title="image" alt="image.png" height="250"></td>
-
-        </tr>
-
-        </tbody>
-    </table>
-
+    </section>
 
 </section>
+</section>
 
-<br>
-<hr>
+
+
+
+
+
+
 
 <!--Contact Us Page-->
-</section>
-<h5 id="contact">CONTACT</h5>
-</section>
+<section class="contact">
 
-<section>
-    <img src="assets/img/map.png" title="map" alt="map.png" height="300">
-</section>
-<br>
-<section>
-    <form>
-        <label for="name">Your Name</label><br>
-        <input type="text" id="name">
-        <br>
-        <br>
-        <label for="email">Email</label><br>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="subject">Subject</label><br>
-        <input type="text" id="subject">
-        <br>
-        <br>
-        <label for="message">Your Message</label><br>
-        <textarea id="message" rows="10" cols="50"></textarea>
-        <br>
-        <button type="submit">Submit</button>
+    <h5 id="contact">CONTACT</h5>
+    <div id="contact_line"></div>
 
 
-    </form>
-    <br>
-</section>
-<section>
-    <table>
-        <thead>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        </thead>
+    <section>
+        <img id="map_img" src="assets/img/map.png" title="map" alt="map.png" height="340">
+    </section>
 
-        <tbody>
-        <tr>
-            <td>
-                <a href="https://www.google.com/maps/place/IJSE+-+Institute+of+Software+Engineering/@6.7110124,79.907188,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae2460f782dc799:0x5f71f9d81e905724!8m2!3d6.7110124!4d79.9097629!16s%2Fg%2F11cn7ftx1t?authuser=0&entry=ttu"><img
-                        src="assets/img/location.png" title="location" alt="location.png" height="30"></a></td>
-            <td><img src="assets/img/call.png" title="call" alt="call.png" height="30"></td>
-            <td><img src="assets/img/mail.png" title="mail" alt="mail.png" height="30"></td>
-            <td><a href="https://www.linkedin.com/in/maheesha-fernando-b51258260/"><img src="assets/img/linkedin.png"
-                                                                                        title="linkedin"
-                                                                                        alt="linkedin.png" height="30"></a>
-            </td>
-            <td><a href="https://github.com/maheeshak"><img src="assets/img/github.png" title="github" alt="github.png"
-                                                            height="30"></a></td>
-            <td><img src="assets/img/twitter.png" title="twitter" alt="twitter.png" height="30"></td>
-        </tr>
-        </tbody>
+    <section id="form">
+        <form>
+            <label for="name">Your Name</label><br>
+            <input type="text" id="name">
+            <br>
+            <br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email">
+            <br>
+            <br>
+            <label for="subject">Subject</label><br>
+            <input type="text" id="subject">
+            <br>
+            <br>
+            <label for="message">Your Message</label><br>
+            <textarea id="message" rows="10" cols="50"></textarea>
+            <br>
+            <button type="submit">Submit</button>
 
-    </table>
-    <br>
+
+        </form>
+
+    </section>
+    <section id="logo_section">
+
+        <section>
+
+        <a href="https://www.google.com/maps/place/IJSE+-+Institute+of+Software+Engineering/@6.7110124,79.907188,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae2460f782dc799:0x5f71f9d81e905724!8m2!3d6.7110124!4d79.9097629!16s%2Fg%2F11cn7ftx1t?authuser=0&entry=ttu"><img
+                src="assets/img/location.png" title="location" alt="location.png" height="40"></a></td>
+        <img src="assets/img/call.png" title="call" alt="call.png" height="40"></td>
+        <img src="assets/img/mail.png" title="mail" alt="mail.png" height="40"></td>
+        <a href="https://www.linkedin.com/in/maheesha-fernando-b51258260/"><img
+                src="assets/img/linkedin.png"
+                title="linkedin"
+                alt="linkedin.png" height="40"></a>
+
+        <a href="https://github.com/maheeshak"><img src="assets/img/github.png" title="github"
+                                                    alt="github.png"
+                                                    height="40"></a></td>
+        <img src="assets/img/twitter.png" title="twitter" alt="twitter.png" height="40"></td>
+
+        </section>
+    </section>
 </section>
-<br>
 
 
 <!--Footer-->
 <footer>
     <section>
-        <td><img src="assets/img/logo.png" title="logo" alt="logo.png" height="30"></td>
-        <td><h3>Developed By Maheesha Fernando</h3></td>
+        <img src="assets/img/logo.png" title="Maheesha Fernando" alt="image.png">
+        <h4>Developed By Maheesha Fernanado</h4>
+
     </section>
 </footer>
+
+
+<script src="assets/JS/lib/jquery.min.js"></script>
+<script src="assets/JS/script.js"></script>
+<script src="assets/JS/interests_page.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    /*Adding a preloader to the website...*/
+    AOS.init();
+    window.addEventListener("load", () => {
+        $(".preloader").css("display", "none");
+    });
+    /*window.onload = () =>{     //This runs after loading all the resources in the website..this runs at last
+        $(".preloader").css("display","none"); //Preloader get vanished after loading every resource in the website
+    }*/
+
+    document.addEventListener("DOMContentLoaded", () => { //whether the DOM is loaded to the window
+        console.log("B");
+    });
+
+    $(window).ready(() => {
+        console.log("C");      //Whether the window is ready by downloading all the external resources
+    });
+
+</script>
 </body>
 
 </html>
